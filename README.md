@@ -1,37 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend - Questionnaire Management System
 
-## Getting Started
+This is the frontend for a questionnaire management system built with Next.js. It provides an intuitive user interface for managing questionnaires and viewing responses.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## **Technologies Used**
+
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **React**: Library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **Axios**: HTTP client for API communication.
+- **Nookies**: Cookie management for Next.js.
+
+---
+
+## **Project Structure**
+```
+frontend/
+├── public/           # Static assets (e.g., images, fonts)
+├── src/
+│   ├── components/   # Reusable UI components
+│   ├── pages/        # Application pages
+│   ├── services/     # API service calls
+│   ├── styles/       # Global styles and Tailwind configuration
+├── .env.example      # Environment variables template
+├── package.json      # Dependencies and scripts
+└── README.md         # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **🛠️ Getting Started**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Follow these steps to set up and run the frontend project.
 
-## Learn More
+### **Step 1: 🚀 Initial Setup**
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/frontend.git
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Step 2: ⚙️ Environment Configuration**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Rename `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Update the `.env` file with your backend API URL:
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:8080
+   ```
 
-## Deploy on Vercel
+### **Step 3: 🏃‍♂️ Running the Project**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the development server:
+   ```bash
+   yarn run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# questionnaire-system-frontend
+The application will be available at `http://localhost:3000`.
+
+---
