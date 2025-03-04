@@ -1,6 +1,6 @@
-# Frontend - Questionnaire Management System
+# Frontend - Credit Card Validator
 
-This is the frontend for a questionnaire management system built with Next.js. It provides an intuitive user interface for managing questionnaires and viewing responses.
+This is the frontend for a credit card validation system built with **Next.js**. It provides an intuitive user interface for validating credit card details, including card number, cardholder name, expiry date, and CVV.
 
 ---
 
@@ -10,7 +10,8 @@ This is the frontend for a questionnaire management system built with Next.js. I
 - **React**: Library for building user interfaces.
 - **Tailwind CSS**: Utility-first CSS framework.
 - **Axios**: HTTP client for API communication.
-- **Nookies**: Cookie management for Next.js.
+- **Vitest**: Testing framework for unit and integration tests.
+- **React Testing Library**: Library for testing React components.
 
 ---
 
@@ -19,10 +20,12 @@ This is the frontend for a questionnaire management system built with Next.js. I
 frontend/
 ├── public/           # Static assets (e.g., images, fonts)
 ├── src/
-│   ├── components/   # Reusable UI components
+│   ├── app/components/ # Reusable UI components (e.g., CreditCardForm, CreditCardList)
 │   ├── pages/        # Application pages
 │   ├── services/     # API service calls
+│   ├── store/        # Redux reducers
 │   ├── styles/       # Global styles and Tailwind configuration
+│   ├── types/        # Interfaces and types
 ├── .env.example      # Environment variables template
 ├── package.json      # Dependencies and scripts
 └── README.md         # Project documentation
@@ -38,8 +41,8 @@ Follow these steps to set up and run the frontend project.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/frontend.git
-   cd frontend
+    git clone https://github.com/PedroLuizComZ/frontend-credit-card-validator.git
+   cd frontend-credit-card-validator
    ```
 2. Install dependencies:
    ```bash
@@ -65,6 +68,3 @@ Start the development server:
    ```
 
 The application will be available at `http://localhost:3000`.
-
----# frontend-credit-card-validator
-# frontend-credit-card-validator

@@ -1,16 +1,19 @@
-import Layout from "@/app/components/layout";
+import { store } from "@/store/store";
 import "@/styles/globals.css";
 import { AppProps } from "next/app";
 import Head from "next/head";
+import { Provider } from "react-redux";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <>
       <Head>
-        <title>Questionnaire Management System</title>
-        <meta name="description" content="Manage and respond to questionnaires easily." />
+        <title>Credit Card Validador</title>
+        <meta name="description" content="Validade Credit Cards" />
       </Head>
+      <Provider store={store}>
       <Component {...pageProps} />
-    </Layout>
+    </Provider>
+    </>
   );
 }
